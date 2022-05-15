@@ -1,0 +1,29 @@
+.read-more {
+  border: none;
+  padding: 0;
+  max-width: 0;
+}
+
+// p {
+//   margin: 20px 0;
+// }
+
+.extra-text {
+  display: none;
+}
+
+#read-more:checked ~ .extra-text {
+  display: block;
+}
+
+.less {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: flex;
+}

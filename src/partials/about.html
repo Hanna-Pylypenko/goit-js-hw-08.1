@@ -1,0 +1,72 @@
+<section class="about__section" id="about">
+  <div class="container">
+    <p class="about__label">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+
+    <div class="about__main-div">
+      <picture>
+        <source
+          srcset="./images/desktop/cow.webp 1x, ./images/desktop/cow@2x.webp 2x"
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/desktop/cow.png 1x, ./images/desktop/cow@2x.png 2x"
+          type="image/png"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/tablet/cow.webp 1x, ./images/tablet/cow@2x.webp 2x"
+          type="image/webp"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="./images/tablet/cow.png 1x, ./images/tablet/cow@2x.png 2x"
+          type="image/png"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="./images/mobile/cow.webp 1x, ./images/mobile/cow@2x.webp 2x"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <source
+          srcset="./images/mobile/cow.png 1x, ./images/mobile/cow@2x.png 2x"
+          type="image/png"
+          media="(max-width: 768px)"
+        />
+        <img class="about__img" src="./images/desktop/cow.png" alt="Cow and milk" />
+      </picture>
+      <div class="about__main-info">
+        <p class="about__text-1">
+          We follow the world trends in the production of natural ice cream so that you can enjoy
+          delicious ice cream made with the most honest ingredients.
+        </p>
+        <p class="about__text-2">
+          Our ice cream contains six natural ingredients. We use perfect milk from our organic farms
+          and Columbian cane sugar. Other ingredients include cream, butter, fruits, and berries. We
+          also produce frozen juice. <br />
+          <br />
+          We use only eco-friendly packaging.
+        </p>
+        <input type="checkbox" id="read-more-1" hidden />
+        <p class="about__extra-text">
+          Every product is randomly tested. We also strictly monitor the ingredients we purchase
+          from outside suppliers.
+        </p>
+        <label for="read-more-1" class="about__button"
+          >Read &nbsp; <span class="about__more">more</span><span class="about__less">less</span>
+          <svg class="about__button-icon" width="10" height="10">
+            <use href="./images/icons.svg#icon_button"></use>
+          </svg>
+        </label>
+        <!-- <button type="button" class="about__button">
+          Read more
+          <svg class="about__button-icon" width="10" height="10">
+            <use href="./images/icons.svg#icon_button"></use>
+          </svg>
+        </button> -->
+      </div>
+    </div>
+  </div>
+</section>

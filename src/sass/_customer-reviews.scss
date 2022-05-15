@@ -1,0 +1,172 @@
+.customer-reviews {
+  margin: 0 auto;
+  padding-bottom: 86px;
+  padding-top: 123px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.item-img {
+  margin: 0 auto;
+
+  margin-bottom: 29px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.item-wrap__color {
+  margin: 0 auto;
+  width: 280px;
+  padding: 43px 45px 13px 45px;
+  background: #fafafa;
+
+  margin-bottom: 37px;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    padding: 45px 36px 28px 40px;
+    margin-bottom: 42px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    padding: 45px 36px 28px 40px;
+
+    margin-bottom: 34px;
+  }
+}
+
+.item-text {
+  position: relative;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  padding: 0 12px;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 28px,
+    #e1e1e1 30px,
+    #e1e1e1 29px
+  );
+
+  z-index: 1;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 92%;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -6%;
+    left: 10%;
+    width: 54px;
+    height: 40px;
+
+    background-image: url('../images/mobile/quotes.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+      top: -14%;
+      left: -4%;
+      transform: translate(-1%, -10%);
+    }
+    @media screen and (min-width: 1280px) {
+      top: -4%;
+      left: -2%;
+      transform: translate(-5%, -30%);
+    }
+  }
+}
+
+.item-name {
+  position: relative;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 37px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    top: -60%;
+    left: 50%;
+    transform: translate(-50%, 65%);
+
+    background-image: url('../images/mobile/group_dots_color.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    // @media screen and (min-width: 1280px) {
+    //     top: -50%;
+    //     left: 50%;
+    //     transform: translate(-50%, 50%);
+    // }
+  }
+}
+
+.swiper-wrapper {
+  margin-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url('../images/mobile/home.svg');
+  background-size: cover;
+  border-radius: unset;
+  width: 13px;
+  height: 12px;
+  background-color: transparent;
+}

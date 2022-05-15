@@ -1,0 +1,167 @@
+<section class="hero" id="hero">
+  <div class="hero__bgr">
+    <div class=" hero_container">
+      <div class="hero__main">
+        <div class="hero_title-box">
+          <h1 class="hero__tittle">
+            <span class="hero__tittle--acsent"
+              >ice cream <br />
+              made with</span
+            >
+            <span class="hero__tittle--main">passion</span>
+          </h1>
+
+          <ul class="buttons">
+            <li class="buttons__item">
+              <a class="button hero_button button--dark" href="#products">Products</a>
+            </li>
+            <li class="buttons__item">
+              <a class="button hero_button button--light" href="#about">How it’s made?</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="hero__list">
+          <li class="hero__item ">
+          
+            <p class="hero__label hero__label--top">
+              <span class="hero__number">
+                16
+              </span>
+              cafes
+            </p>
+          </li>
+
+          <li class="hero__item">
+            
+            <p class="hero__label hero__label--bottom">
+              <span class="hero__number">
+                23
+              </span>
+              food trucks
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero_massege">
+        <p class="hero__text">
+          ICE CREAM PASSION – <br> the bright taste of life.
+          Delicious ice cream that everyone will love.
+        </p>
+
+        <input type="checkbox" id="read-more" hidden  />
+        <p class="extra-text">Even your grandmother :)</p>
+
+        <label for="read-more" class="read-more hero__read-more" aria-label="red more switch">
+        
+          <span class="more btn-reset hero__arrow hero__arrow--more" >
+            <svg class="icon-arrow ">
+              <use  href="./images/icons.svg#icon-arrow-right" ></use>
+            </svg>
+          </span>
+          
+          <span  class="less btn-reset hero__arrow hero__arrow--less"  >
+            <svg class="icon-arrow ">
+              <use  href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </span>
+          
+        </label>
+      </div>
+
+      <picture>
+        <source
+          srcset="./images/tablet/milk_in_decanter.png 1x, ./images/tablet/milk_in_decanter@2x.png 2x"
+          type="image/jpeg"
+          media="(min-width: 768px) and (max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/desktop/milk_in_decanter.png    1x,
+            ./images/desktop/milk_in_decanter@2x.png 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="hero__img hero__img--left"
+          src="./images/desktop/milk_in_decanter.png"
+          alt="Milk in a jug with splashes as a background of bio eco"
+        />
+      </picture>
+
+      <picture>
+        <source
+          srcset="./images/tablet/tasty.png 1x, ./images/tablet/tasty@2x.png 2x"
+          type="image/jpeg"
+          media="(min-width: 768px) and (max-width: 1279px)"
+        />
+        <source
+          srcset="./images/desktop/tasty.png 1x, ./images/desktop/tasty@2x.png 2x"
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="hero__img hero__img--right"
+          src="./images/desktop/tasty.png"
+          alt="A girl wearing a swimsuit tasting ice cream"
+        />
+      </picture>
+
+      <picture>
+        <source
+          srcset="./images/mobile/big_ice_cream.png 1x, ./images/mobile/big_ice_cream@2x.png 2x"
+          type="image/jpeg"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="./images/tablet/big_ice_cream.png 1x, ./images/tablet/big_ice_cream@2x.png 2x"
+          type="image/jpeg"
+          media="(min-width: 768px) and (max-width: 1279px)"
+        />
+        <source
+          srcset="./images/desktop/big_ice_cream.png 1x, ./images/desktop/big_ice_cream@2x.png 2x"
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="hero__img hero__img--center"
+          src="./images/desktop/big_ice_cream.png"
+          alt="A big colorful ice cream cone"
+        />
+      </picture>
+
+      <div class="hero__circle"></div>
+    </div>
+  </div>
+</section>
+
+<!-- <script>
+  (() => {
+    const mobileMenu = document.querySelector('.js-menu-container');
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
+
+    const toggleMenu = () => {
+      const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+
+      const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+    };
+
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+
+    // Закрываем мобильное меню на более широких экранах
+    // в случае изменения ориентации устройства.
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
+  })();
+</script> -->
